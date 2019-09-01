@@ -21,7 +21,6 @@ class Note:
     def __init__(self, guid):
         self.guid = guid
 
-
 client = EvernoteClient(token=os.environ.get('EVERNOTE_TOKEN'))
 userStore = client.get_user_store()
 user = userStore.getUser()
